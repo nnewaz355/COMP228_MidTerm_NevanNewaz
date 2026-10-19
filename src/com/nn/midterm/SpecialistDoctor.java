@@ -1,6 +1,6 @@
 package com.nn.midterm;
 
-public class SpecialistDoctor extends Doctor {
+public class SpecialistDoctor extends Doctor { //multilevel inheritance
 	private final String specialization;
 	private final double specialistSurcharge;
 	

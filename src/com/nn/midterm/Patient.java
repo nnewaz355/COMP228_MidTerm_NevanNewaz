@@ -1,6 +1,6 @@
 package com.nn.midterm;
 
-public class Patient extends Person {
+public class Patient extends Person { //single inheritance
 	
 	/*
 	 *  final patientNumber, age, department, consultation fee, overloaded registerPatient()

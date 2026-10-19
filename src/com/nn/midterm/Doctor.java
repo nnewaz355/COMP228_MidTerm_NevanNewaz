@@ -1,6 +1,6 @@
 package com.nn.midterm;
 
-public class Doctor extends MedicalStaff {
+public class Doctor extends MedicalStaff { //multilevel inheritance
 	
 	private final double consultationFee;
 	private int patientsSeen;

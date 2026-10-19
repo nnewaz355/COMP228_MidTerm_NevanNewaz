@@ -1,6 +1,6 @@
 package com.nn.midterm;
 
-public class Nurse extends MedicalStaff {
+public class Nurse extends MedicalStaff { // hybrid inheritance (multilevel and hierarchical)
 	private final String shiftType;
 	private final double shiftAllowance;
 	
