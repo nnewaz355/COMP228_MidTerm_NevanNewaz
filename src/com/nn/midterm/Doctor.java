@@ -6,9 +6,9 @@ public class Doctor extends MedicalStaff {
 	private int patientsSeen;
 	
 	
-	public Doctor(String name, String phoneNumber, String staffId, String department, double monthlySalary,
+	public Doctor(String personId, String name, String phoneNumber, String staffId, String department, double monthlySalary,
 			double consultationFee, int patientsSeen) {
-		super(name, phoneNumber, staffId, department, monthlySalary);
+		super(personId, name, phoneNumber, staffId, department, monthlySalary);
 		this.consultationFee = consultationFee;
 		this.patientsSeen = patientsSeen;
 	}

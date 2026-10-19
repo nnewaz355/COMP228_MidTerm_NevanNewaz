@@ -14,11 +14,13 @@ methods, validation, and patient details.
 	protected static int patientCount = 0;
 	
 	public Patient(String name, String phoneNumber, int age, String medicalDepartment) {
-		super(name, phoneNumber);
-		this.age = age;
-		this.medicalDepartment = medicalDepartment;
 		patientCount++;
 		this.patientNumber = "P" + (1000 + patientCount);
+		
+		super("P-" + "P" + (1000 + patientCount) ,name, phoneNumber);
+		
+		this.age = age;
+		this.medicalDepartment = medicalDepartment;
 	}// Because the register methods have parametric input, we will be using it to instantiate patients
 
 	@Override
@@ -38,7 +40,7 @@ methods, validation, and patient details.
 	
 	public static Patient registerPatient(String name, int age, String department) { //Default Phone Number will be not provided
 		if(age >= 0 && name.length() > 0 && department.length() > 0) { //register and count patient
-			System.out.println("Registration Status: Successful");\
+			System.out.println("Registration Status: Successful");
 		} else { //unsuccessful
 			System.out.println("Registration Status: Failed");
 		}
