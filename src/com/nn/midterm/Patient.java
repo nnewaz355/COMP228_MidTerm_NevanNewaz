@@ -7,7 +7,7 @@ public class Patient extends Person {
 methods, validation, and patient details.
 	 */
 	
-	private final String patientNumber;
+	private final String patientNumber; //automatically decided
 	private int age;
 	private String medicalDepartment;
 	private double consultationFee;
