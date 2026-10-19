@@ -17,10 +17,6 @@ displayBasicDetails(), abstract getRoleDescription(), and toString()
 		personCount++;
 		this.personId = personId;
 	}
-
-	public int getPersonCount() {
-		return personCount;
-	}
 	
 	public String getName() {
 		return name;

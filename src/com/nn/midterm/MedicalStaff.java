@@ -37,10 +37,6 @@ public abstract class MedicalStaff extends Person {
 		return staffId;
 	}
 
-	public static int getStaffCount() {
-		return staffCount;
-	}
-
 	public abstract double calculateMonthlyCompensation();
 
 	@Override
