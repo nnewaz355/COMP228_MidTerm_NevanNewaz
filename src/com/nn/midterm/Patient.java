@@ -42,6 +42,7 @@ methods, validation, and patient details.
 		Patient patient = null;
 		if(age >= 0 && name.length() > 0) { //register and count patient
 			patient = new Patient(name, null, age, "General Medicine");
+			patient.displayPatientDetails();
 			System.out.println("Registration Status: Successful");
 		} else { //unsuccessful
 			System.out.println("Registration Status: Failed");
