@@ -13,14 +13,14 @@ methods, validation, and patient details.
 	private double consultationFee;
 	protected static int patientCount = 0;
 	
-	public Patient(String personId, String name, String phoneNumber, String patientNumber, int age, String medicalDepartment,
+	public Patient(String personId, String name, String phoneNumber, int age, String medicalDepartment,
 			double consultationFee) {
 		super(personId, name, phoneNumber);
-		this.patientNumber = patientNumber;
 		this.age = age;
 		this.medicalDepartment = medicalDepartment;
 		this.consultationFee = consultationFee;
 		patientCount++;
+		this.patientNumber = "P" + (1000 + patientCount);
 	}// Because the register methods have parametric input, we will be using it to instantiate patients
 
 	@Override
