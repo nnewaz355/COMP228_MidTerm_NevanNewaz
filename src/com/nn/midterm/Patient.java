@@ -35,7 +35,7 @@ methods, validation, and patient details.
 		System.out.println("Patient Number: " + this.patientNumber);
 		System.out.println("Age: " + age);
 		System.out.println("Department: " + this.medicalDepartment);
-		System.out.printf("Consultation Fee: $%.2f" + this.consultationFee);
+		//System.out.printf("Consultation Fee: $%.2f" + this.consultationFee);
 	}
 	
 	public static Patient registerPatient(String name, int age) { //Default Department will be General Medicine
