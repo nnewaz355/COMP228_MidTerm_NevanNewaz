@@ -25,7 +25,7 @@ public abstract class MedicalStaff extends Person {
 	
 	public void displayStaffDetails() {
 		System.out.println("Staff ID: " + staffId);
-		System.out.println("Name: " + name);
+		System.out.println("Name: " + getName());
 		System.out.println("Role: " + getRoleDescription());
 		System.out.println("Department: " + department);
 		System.out.println("Phone: " + getPhoneNumber());

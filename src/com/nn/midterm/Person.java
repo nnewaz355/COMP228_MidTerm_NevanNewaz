@@ -7,7 +7,7 @@ displayBasicDetails(), abstract getRoleDescription(), and toString()
 	 */
 	
 	private final String personId;
-	protected String name;
+	private String name;
 	private String phoneNumber;
 	protected static int personCount = 0;
 	
@@ -22,6 +22,26 @@ displayBasicDetails(), abstract getRoleDescription(), and toString()
 		return personCount;
 	}
 	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public String getPersonId() {
+		return personId;
+	}
+
 	public void displayBasicDetails(){
 		//System.out.println("Person ID: "+ this.personId + "\nName: " + this.name +  "\nPhone Number: "+this.phoneNumber + "Role: " + this.getRoleDescription());
 		System.out.printf("Person ID: %s%nName: %s%nPhone Number: %s%nRole: %s%n", this.personId, this.name, this.phoneNumber, this.getRoleDescription());
