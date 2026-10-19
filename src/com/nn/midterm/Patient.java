@@ -29,7 +29,7 @@ methods, validation, and patient details.
 	}
 	
 	public void displayPatientDetails() {
-		System.out.println("Patient Number: " + this.patientNumber + "\nName: " + this.name + "\nAge: " + this.age + "\nDepartment: " + this.medicalDepartment);
+		System.out.printf("Patient Number: %s%nName: %s%nAge: %d%nDepartment: %s%nConsultation Fee: $%.2d", this.patientNumber, this.name, this.age, this.medicalDepartment, this.consultationFee);
 	}
 	
 	public void registerPatient(String name, int age) {
