@@ -38,21 +38,39 @@ methods, validation, and patient details.
 		System.out.printf("Consultation Fee: $%.2f" + this.consultationFee);
 	}
 	
-	public static Patient registerPatient(String name, int age, String department) { //Default Phone Number will be not provided
-		if(age >= 0 && name.length() > 0 && department.length() > 0) { //register and count patient
+	public static Patient registerPatient(String name, int age) { //Default Department will be General Medicine
+		Patient patient = null;
+		if(age >= 0 && name.length() > 0) { //register and count patient
+			patient = new Patient(name, null, age, "General Medicine");
 			System.out.println("Registration Status: Successful");
 		} else { //unsuccessful
 			System.out.println("Registration Status: Failed");
 		}
+		
+		return patient;
+	}
+	
+	public static Patient registerPatient(String name, int age, String department) {
+		Patient patient = null;
+		if(age >= 0 && name.length() > 0 && department.length() > 0) { //register and count patient
+			patient = new Patient(name, null, age, department);
+			System.out.println("Registration Status: Successful");
+		} else { //unsuccessful
+			System.out.println("Registration Status: Failed");
+		}
+		
+		return patient;
 	}
 	
 	public static Patient registerPatient(String name, int age, String department, String phoneNumber) {
+		Patient patient = null;
 		if(age >= 0 && name.length() > 0 && department.length() > 0 && phoneNumber.length() > 0) { //register and count patient
-			Patient patient = new Patient(name, phoneNumber, age, department);
+			patient = new Patient(name, phoneNumber, age, department);
 			System.out.println("Registration Status: Successful");
-			return patient;
 		} else { //unsuccessful
 			System.out.println("Registration Status: Failed");
 		}
+		
+		return patient;
 	}
 }
