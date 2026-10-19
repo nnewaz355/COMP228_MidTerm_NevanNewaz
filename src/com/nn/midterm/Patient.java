@@ -40,7 +40,7 @@ methods, validation, and patient details.
 	
 	public static Patient registerPatient(String name, int age) { //Default Department will be General Medicine
 		Patient patient = null;
-		if(age >= 0 && name.length() > 0) { //register and count patient
+		if(age >= 0 && age <= 120 && name.length() > 0) { //register and count patient
 			patient = new Patient(name, null, age, "General Medicine");
 			patient.displayPatientDetails();
 			System.out.println("Registration Status: Successful");
@@ -53,7 +53,7 @@ methods, validation, and patient details.
 	
 	public static Patient registerPatient(String name, int age, String department) {
 		Patient patient = null;
-		if(age >= 0 && name.length() > 0 && department.length() > 0) { //register and count patient
+		if(age >= 0 && age <= 120 && name.length() > 0 && department.length() > 0) { //register and count patient
 			patient = new Patient(name, null, age, department);
 			patient.displayPatientDetails();
 			System.out.println("Registration Status: Successful");
@@ -66,7 +66,7 @@ methods, validation, and patient details.
 	
 	public static Patient registerPatient(String name, int age, String department, String phoneNumber) {
 		Patient patient = null;
-		if(age >= 0 && name.length() > 0 && department.length() > 0 && phoneNumber.length() > 0) { //register and count patient
+		if(age >= 0 && age <= 120 && name.length() > 0 && department.length() > 0 && phoneNumber.length() > 0) { //register and count patient
 			patient = new Patient(name, phoneNumber, age, department);
 			patient.displayPatientDetails();
 			System.out.println("Registration Status: Successful");
