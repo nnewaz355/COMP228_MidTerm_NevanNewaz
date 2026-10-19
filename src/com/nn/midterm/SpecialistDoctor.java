@@ -22,7 +22,7 @@ public class SpecialistDoctor extends Doctor { //multilevel inheritance
 	@Override
 	public void displayStaffDetails(){
 		super.displayStaffDetails();
-		System.out.println("Specialization: " + specialization);
+		System.out.println("\nSpecialization: " + specialization);
 		System.out.printf("Consultation Fee: $%.2f", calculateConsultationFee());
 	}
 	

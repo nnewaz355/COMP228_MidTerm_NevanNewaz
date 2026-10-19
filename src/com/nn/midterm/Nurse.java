@@ -19,7 +19,7 @@ public class Nurse extends MedicalStaff { // hybrid inheritance (multilevel and 
 	@Override
 	public void displayStaffDetails(){
 		super.displayStaffDetails();
-		System.out.println("Department: " + this.getDepartment());
+		System.out.println("\nDepartment: " + this.getDepartment());
 		System.out.println("Shift: " + this.shiftType);
 		System.out.printf("Monthly Compensation: $%.2f", this.calculateMonthlyCompensation());
 	}

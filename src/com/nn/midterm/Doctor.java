@@ -22,8 +22,9 @@ public class Doctor extends MedicalStaff { //multilevel inheritance
 	@Override
 	public void displayStaffDetails() {
 		super.displayStaffDetails();
-		System.out.println("Patients Seen: " + patientsSeen);
+		System.out.println("\nPatients Seen: " + patientsSeen);
 		System.out.printf("Consultation Fee: $%.2f", calculateConsultationFee());
+		System.out.println();
 		System.out.printf("Monthly Compensation: $%.2f", calculateMonthlyCompensation());
 	}
 	
