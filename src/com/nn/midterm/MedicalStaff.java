@@ -17,6 +17,30 @@ public abstract class MedicalStaff extends Person {
 		staffCount++;
 	}
 	
+	public String getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+
+	public double getMonthlySalary() {
+		return monthlySalary;
+	}
+
+	public void setMonthlySalary(double monthlySalary) {
+		this.monthlySalary = monthlySalary;
+	}
+
+	public String getStaffId() {
+		return staffId;
+	}
+
+	public static int getStaffCount() {
+		return staffCount;
+	}
+
 	public abstract double calculateMonthlyCompensation();
 
 	@Override
