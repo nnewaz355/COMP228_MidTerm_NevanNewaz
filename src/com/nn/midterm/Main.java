@@ -21,8 +21,15 @@ public class Main {
 		Doctor doctor = new Doctor("D2001", "Dr. Amit Kumar", "416-555-0110", "Cardiology",9000.00, 150.00, 100);
 		SpecialistDoctor specialist = new SpecialistDoctor("D2002", "Dr. Neha Patel", "416-555-0111","Neurosciences", 12000.00, 150.00, 80, "Neurology", 50.00);
 		Nurse nurse = new Nurse("N3001", "Sarah Wilson", "416-555-0112", "Emergency",5000.00, "Night", 500.00);
+		
+		System.out.println("\nDOCTOR DETAILS");
+		doctor.displayStaffDetails();
+		System.out.println("\n\nSPECIALIST DOCTOR DETAILS");
+		specialist.displayStaffDetails();
+		System.out.println("\n\nNURSE DETAILS");
+		nurse.displayStaffDetails();
 	
-		System.out.println("\nREGISTRATION SUMMARY");
+		System.out.println("\n\nREGISTRATION SUMMARY");
 		System.out.println("Total People: " + Person.personCount);
 		System.out.println("Total Patients: " + Patient.patientCount);
 		System.out.println("Total Medical Staff: " + MedicalStaff.staffCount);
