@@ -32,10 +32,16 @@ public class Doctor extends MedicalStaff {
 	}
 	//discount is from 0 to 100, letting some values be such as 4.75%
 	public double calculateConsultationFee(double discount) {
+		if (discount < 0 || discount > 100) {
+			throw new IllegalArgumentException("Discount must be between 0 and 100 percent.");
+		}
 		return calculateConsultationFee() * (100.00 - discount) / 100.00; //refuse integer division
 	}
 
 	public double calculateConsultationFee(double discount, double additionalCharge) {
+		if (additionalCharge < 0) {
+			throw new IllegalArgumentException("Additional Charge cannot be negative.");
+		}
 		return calculateConsultationFee(discount) + additionalCharge;
 	}
 }
