@@ -28,8 +28,16 @@ public class Main {
 		specialist.displayStaffDetails();
 		System.out.println("\n\nNURSE DETAILS");
 		nurse.displayStaffDetails();
+		
+		System.out.println("\n\nCONSULTATION FEE CALCULATIONS");
+		System.out.printf("Standard Consultation Fee: $%.2f", doctor.calculateConsultationFee());
+		System.out.println();
+		System.out.printf("Consultation Fee After Discount: $%.2f", doctor.calculateConsultationFee(10));
+		System.out.println();
+		System.out.printf("Consultation Fee With Additional Charge: $%.2f", doctor.calculateConsultationFee(10,40));
+		System.out.println();
 	
-		System.out.println("\n\nREGISTRATION SUMMARY");
+		System.out.println("\nREGISTRATION SUMMARY");
 		System.out.println("Total People: " + Person.personCount);
 		System.out.println("Total Patients: " + Patient.patientCount);
 		System.out.println("Total Medical Staff: " + MedicalStaff.staffCount);
