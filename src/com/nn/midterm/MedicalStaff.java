@@ -2,7 +2,7 @@ package com.nn.midterm;
 
 public abstract class MedicalStaff extends Person {
 	
-	private final String staffId;
+	private final String staffId; //decided by main method
 	private String department;
 	private double monthlySalary;
 	protected static int staffCount;
