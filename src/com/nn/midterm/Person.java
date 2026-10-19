@@ -23,7 +23,7 @@ displayBasicDetails(), abstract getRoleDescription(), and toString()
 	}
 	
 	public void displayBasicDetails(){
-		
+		System.out.println("Person ID: "+ this.personId + "\nName: " + this.name +  "\nPhone Number: "+this.phoneNumber);
 	}
 	
 	public abstract String getRoleDescription(); // will return "Patient", etc.
