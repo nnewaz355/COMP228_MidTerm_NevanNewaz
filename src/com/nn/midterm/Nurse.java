@@ -6,7 +6,7 @@ public class Nurse extends MedicalStaff { // hybrid inheritance (multilevel and 
 	
 	public Nurse(String personId, String name, String phoneNumber, String staffId, String department,
 			double monthlySalary, String shiftType, double shiftAllowance) {
-		super(personId, name, phoneNumber, staffId, department, monthlySalary);
+		super(staffId, name, phoneNumber, department, monthlySalary);
 		this.shiftType = shiftType;
 		this.shiftAllowance = shiftAllowance;
 	}

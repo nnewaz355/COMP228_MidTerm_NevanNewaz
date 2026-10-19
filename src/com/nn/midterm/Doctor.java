@@ -6,9 +6,9 @@ public class Doctor extends MedicalStaff { //multilevel inheritance
 	private int patientsSeen;
 	
 	
-	public Doctor(String personId, String name, String phoneNumber, String staffId, String department, double monthlySalary,
+	public Doctor(String name, String phoneNumber, String staffId, String department, double monthlySalary,
 			double consultationFee, int patientsSeen) {
-		super(personId, name, phoneNumber, staffId, department, monthlySalary);
+		super(staffId, name, phoneNumber, department, monthlySalary);
 		this.consultationFee = consultationFee;
 		this.patientsSeen = patientsSeen;
 	}

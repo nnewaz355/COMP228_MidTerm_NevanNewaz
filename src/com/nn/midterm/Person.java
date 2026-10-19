@@ -6,7 +6,7 @@ public abstract class Person {
 displayBasicDetails(), abstract getRoleDescription(), and toString()
 	 */
 	
-	protected final String personId;
+	protected final String personId; // P-[patient number or staff id]
 	private String name;
 	private String phoneNumber;
 	protected static int personCount = 0;
