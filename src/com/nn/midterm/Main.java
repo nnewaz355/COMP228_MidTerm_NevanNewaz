@@ -17,6 +17,10 @@ public class Main {
 		Patient.registerPatient("", 28, "Dermatology"); // 3 parameters: empty name (rejected)
 		System.out.println();
 		Patient.registerPatient("Tom Lee", 150, "Orthopedics"); // 3 parameters: age is too high (rejected)
+		
+		Doctor doctor = new Doctor("D2001", "Dr. Amit Kumar", "416-555-0110", "Cardiology",9000.00, 150.00, 100);
+		SpecialistDoctor specialist = new SpecialistDoctor("D2002", "Dr. Neha Patel", "416-555-0111","Neurosciences", 12000.00, 150.00, 80, "Neurology", 50.00);
+		Nurse nurse = new Nurse("N3001", "Sarah Wilson", "416-555-0112", "Emergency",5000.00, "Night", 500.00);
 	
 		System.out.println("\nREGISTRATION SUMMARY");
 		System.out.println("Total People: " + Person.personCount);
