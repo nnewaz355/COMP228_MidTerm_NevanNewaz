@@ -11,11 +11,11 @@ displayBasicDetails(), abstract getRoleDescription(), and toString()
 	private String phoneNumber;
 	protected static int personCount = 0;
 	
-	public Person(String personId, String name, String phoneNumber) {
-		this.personId = personId;
+	public Person(String name, String phoneNumber) {
 		this.name = name;
 		this.phoneNumber = phoneNumber;
 		personCount++;
+		this.personId = "" + personCount;
 	}
 
 	public int getPersonCount() {

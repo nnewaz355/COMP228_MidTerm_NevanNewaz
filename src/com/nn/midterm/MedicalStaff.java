@@ -8,9 +8,9 @@ public abstract class MedicalStaff extends Person {
 	protected static int staffCount;
 	
 	
-	public MedicalStaff(String personId, String name, String phoneNumber, String staffId, String department,
+	public MedicalStaff(String name, String phoneNumber, String staffId, String department,
 			double monthlySalary) {
-		super(personId, name, phoneNumber);
+		super(name, phoneNumber);
 		this.staffId = staffId;
 		this.department = department;
 		this.monthlySalary = monthlySalary;
