@@ -44,4 +44,9 @@ public class Doctor extends MedicalStaff {
 		}
 		return calculateConsultationFee(discount) + additionalCharge;
 	}
+	
+	@Override
+	public String getRoleDescription() {
+		return "Doctor";
+	}
 }

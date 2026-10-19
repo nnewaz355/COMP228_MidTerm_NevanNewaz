@@ -26,4 +26,9 @@ public class SpecialistDoctor extends Doctor {
 		System.out.println("Specialization: " + specialization);
 		System.out.printf("Consultation Fee: $%.2f", calculateConsultationFee());
 	}
+	
+	@Override
+	public String getRoleDescription() {
+		return "Specialist Doctor (" + specialization + ")";
+	}
 }
