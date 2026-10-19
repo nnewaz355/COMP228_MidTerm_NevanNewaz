@@ -21,8 +21,7 @@ public class SpecialistDoctor extends Doctor {
 	
 	@Override
 	public void displayStaffDetails(){
-		System.out.println("Staff ID: " + this.getStaffId());
-		System.out.println("Name: " + this.getName());
+		super.displayStaffDetails();
 		System.out.println("Specialization: " + specialization);
 		System.out.printf("Consultation Fee: $%.2f", calculateConsultationFee());
 	}

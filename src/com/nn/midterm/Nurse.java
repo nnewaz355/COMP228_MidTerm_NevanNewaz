@@ -18,8 +18,7 @@ public class Nurse extends MedicalStaff {
 	
 	@Override
 	public void displayStaffDetails(){
-		System.out.println("Staff ID: " + this.getStaffId());
-		System.out.println("Name: " + this.getName());
+		super.displayStaffDetails();
 		System.out.println("Department: " + this.getDepartment());
 		System.out.println("Shift: " + this.shiftType);
 		System.out.printf("Monthly Compensation: $%.2f", this.calculateMonthlyCompensation());
