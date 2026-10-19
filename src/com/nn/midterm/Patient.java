@@ -13,7 +13,7 @@ methods, validation, and patient details.
 	private double consultationFee;
 	protected static int patientCount = 0;
 	
-	public Patient(int personId, String name, int phoneNumber, String patientNumber, int age, String medicalDepartment,
+	public Patient(String personId, String name, String phoneNumber, String patientNumber, int age, String medicalDepartment,
 			double consultationFee) {
 		super(personId, name, phoneNumber);
 		this.patientNumber = patientNumber;

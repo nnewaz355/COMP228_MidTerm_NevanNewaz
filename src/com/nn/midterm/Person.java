@@ -6,12 +6,12 @@ public abstract class Person {
 displayBasicDetails(), abstract getRoleDescription(), and toString()
 	 */
 	
-	private final int personId;
-	private String name;
-	private int phoneNumber;
+	private final String personId;
+	protected String name;
+	private String phoneNumber;
 	protected static int personCount = 0;
 	
-	public Person(int personId, String name, int phoneNumber) {
+	public Person(String personId, String name, String phoneNumber) {
 		this.personId = personId;
 		this.name = name;
 		this.phoneNumber = phoneNumber;
