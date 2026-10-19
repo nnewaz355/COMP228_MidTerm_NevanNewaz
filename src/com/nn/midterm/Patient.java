@@ -20,7 +20,8 @@ methods, validation, and patient details.
 		this.age = age;
 		this.medicalDepartment = medicalDepartment;
 		this.consultationFee = consultationFee;
-	}
+		patientCount++;
+	}// Because the register methods have parametric input, we will be using it to instantiate patients
 
 	@Override
 	public String getRoleDescription() {
@@ -37,8 +38,8 @@ methods, validation, and patient details.
 		System.out.printf("Consultation Fee: $%.2f" + this.consultationFee);
 	}
 	
-	public void registerPatient(String name, int age) {
-		if(age >= 0 && name.length() > 0) { //register and count patient
+	public void registerPatient(String name, int age, String department) { //Default Phone Number will be not provided
+		if(age >= 0 && name.length() > 0 && department.length() > 0) { //register and count patient
 			System.out.println("Registration Status: Successful");
 			patientCount += 1;
 		} else { //unsuccessful
@@ -46,8 +47,8 @@ methods, validation, and patient details.
 		}
 	}
 	
-	public void registerPatient(String name, int age, String department) {
-		if(age >= 0 && name.length() > 0 && department.length() > 0) { //register and count patient
+	public void registerPatient(String name, int age, String department, String phoneNumber) {
+		if(age >= 0 && name.length() > 0 && department.length() > 0 && phoneNumber.length() > 0) { //register and count patient
 			System.out.println("Registration Status: Successful");
 			patientCount += 1;
 		} else { //unsuccessful

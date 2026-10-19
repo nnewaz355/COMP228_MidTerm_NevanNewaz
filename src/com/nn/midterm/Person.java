@@ -15,7 +15,7 @@ displayBasicDetails(), abstract getRoleDescription(), and toString()
 		this.personId = personId;
 		this.name = name;
 		this.phoneNumber = phoneNumber;
-		personCount += 1;
+		personCount++;
 	}
 
 	public int getPersonCount() {

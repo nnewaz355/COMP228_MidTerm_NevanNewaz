@@ -5,6 +5,7 @@ public abstract class MedicalStaff extends Person {
 	private final String staffId;
 	private String department;
 	private double monthlySalary;
+	protected static int staffCount;
 	
 	
 	public MedicalStaff(String personId, String name, String phoneNumber, String staffId, String department,
@@ -13,6 +14,7 @@ public abstract class MedicalStaff extends Person {
 		this.staffId = staffId;
 		this.department = department;
 		this.monthlySalary = monthlySalary;
+		staffCount++;
 	}
 	
 	public abstract double calculateMonthlyCompensation();
