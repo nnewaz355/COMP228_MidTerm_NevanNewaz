@@ -1,6 +1,6 @@
 package com.nn.midterm;
 
-public class Patient extends Person { //single inheritance
+public class Patient extends Person implements Reportable { //single inheritance
 	
 	/*
 	 *  final patientNumber, age, department, consultation fee, overloaded registerPatient()
@@ -72,5 +72,11 @@ methods, validation, and patient details.
 		}
 		
 		return patient;
+	}
+	
+
+	@Override
+	public void generateReport() {
+		System.out.printf("[Patient] %s (%s)%nAge: %d year(s)%nDepartment: %s%nConsultation Fee: $%.2f", this.patientNumber, this.getName(), this.age, this.medicalDepartment, this.consultationFee);
 	}
 }
