@@ -1,6 +1,9 @@
 package com.nn.midterm;
 
-public class Doctor extends MedicalStaff implements Reportable { //multilevel inheritance
+import java.time.*;
+import java.time.format.*;
+
+public class Doctor extends MedicalStaff implements Reportable, Schedulable { //multilevel inheritance
 	
 	private final double consultationFee;
 	private int patientsSeen;
@@ -56,5 +59,11 @@ public class Doctor extends MedicalStaff implements Reportable { //multilevel in
 		System.out.println("Patients Seen: " + this.patientsSeen);
 		System.out.printf("Fee: $%.2f%n", this.calculateConsultationFee());
 		System.out.printf("Compensation: $%.2f%n", this.calculateMonthlyCompensation());
+	}
+	
+	public void scheduleAppointment(String appointmentDate) {
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-dd-MM HH:mm");
+        
+        LocalDateTime dateTime = LocalDateTime.parse(appointmentDate, formatter);
 	}
 }
