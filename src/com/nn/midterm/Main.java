@@ -36,6 +36,16 @@ public class Main {
 		System.out.println();
 		System.out.printf("Consultation Fee With Additional Charge: $%.2f", doctor.calculateConsultationFee(10,40));
 		System.out.println();
+		
+		//Demonstrate runtime polymorphism and calculate monthly compensation
+		MedicalStaff staff1 = doctor;
+		MedicalStaff staff2 = specialist;
+		MedicalStaff staff3 = nurse;
+		MedicalStaff[] staffMembers = { staff1, staff2, staff3 };
+		for (MedicalStaff member : staffMembers) {
+			System.out.printf("%s (%s): $%.2f",member.getName(), member.getRoleDescription(), member.calculateMonthlyCompensation());
+			System.out.println();
+		}
 	
 		System.out.println("\nREGISTRATION SUMMARY");
 		System.out.println("Total People: " + Person.personCount);
