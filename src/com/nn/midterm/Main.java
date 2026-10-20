@@ -46,6 +46,14 @@ public class Main {
 			System.out.printf("%s (%s): $%.2f",member.getName(), member.getRoleDescription(), member.calculateMonthlyCompensation());
 			System.out.println();
 		}
+		
+		//Demonstrate interfaces
+		System.out.println("\nREPORTS (Reportable)");
+		Reportable[] reportables = { priya, daniel, doctor, specialist, nurse };
+		for (Reportable reportable : reportables) {
+			reportable.generateReport();
+		}
+
 	
 		System.out.println("\nREGISTRATION SUMMARY");
 		System.out.println("Total People: " + Person.personCount);
