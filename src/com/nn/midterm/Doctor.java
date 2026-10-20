@@ -8,7 +8,6 @@ public class Doctor extends MedicalStaff implements Reportable, Schedulable { //
 	private final double consultationFee;
 	private int patientsSeen;
 	
-	
 	public Doctor(String staffId, String name, String phoneNumber, String department, double monthlySalary,
 			double consultationFee, int patientsSeen) {
 		super(staffId, name, phoneNumber, department, monthlySalary);
@@ -64,6 +63,12 @@ public class Doctor extends MedicalStaff implements Reportable, Schedulable { //
 	public void scheduleAppointment(String appointmentDate) {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-dd-MM HH:mm");
         
-        LocalDateTime dateTime = LocalDateTime.parse(appointmentDate, formatter);
+        try {
+        	LocalDateTime dateTime = LocalDateTime.parse(appointmentDate, formatter);
+        	
+        	System.out.println("Successfully booked an appointment on "+ dateTime.format(formatter) + " with " + this.getName());
+        } catch (DateTimeParseException e) {
+        	System.out.println("Appointment failed (Not a legal Date-Time combo)");
+        }
 	}
 }
