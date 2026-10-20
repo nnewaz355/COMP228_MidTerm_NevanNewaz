@@ -1,6 +1,6 @@
 package com.nn.midterm;
 
-public class Doctor extends MedicalStaff { //multilevel inheritance
+public class Doctor extends MedicalStaff implements Reportable { //multilevel inheritance
 	
 	private final double consultationFee;
 	private int patientsSeen;
@@ -49,5 +49,12 @@ public class Doctor extends MedicalStaff { //multilevel inheritance
 	@Override
 	public String getRoleDescription() {
 		return "Doctor";
+	}
+	
+	public void generateReport() {
+		System.out.println("[Staff] " + this.getStaffId() + " (" + this.getRoleDescription() + ")");
+		System.out.println("Patients Seen: " + this.patientsSeen);
+		System.out.printf("Fee: $%2f%n" + this.calculateConsultationFee());
+		System.out.printf("Compensation: $%2f%n" + this.calculateMonthlyCompensation());
 	}
 }
