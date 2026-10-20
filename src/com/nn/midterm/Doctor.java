@@ -3,7 +3,7 @@ package com.nn.midterm;
 import java.time.*;
 import java.time.format.*;
 
-public class Doctor extends MedicalStaff implements Reportable, Schedulable { //multilevel inheritance
+public class Doctor extends MedicalStaff implements Reportable, Schedulable { //hybrid inheritance (Multiple and Multilevel)
 	
 	private final double consultationFee;
 	private int patientsSeen;
