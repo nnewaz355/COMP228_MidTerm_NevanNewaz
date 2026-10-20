@@ -40,11 +40,18 @@ public class Main {
 		System.out.printf("Consultation Fee With Additional Charge: $%.2f", doctor.calculateConsultationFee(10,40));
 		System.out.println();
 		
-		//Demonstrate runtime polymorphism and calculate monthly compensation
+		//Display staff details with runtime polymorphism
+		System.out.println("\nSTAFF DETAILS (Runtime Polymorphism)");
 		MedicalStaff staff1 = doctor;
 		MedicalStaff staff2 = specialist;
 		MedicalStaff staff3 = nurse;
 		MedicalStaff[] staffMembers = { staff1, staff2, staff3 };
+		for (int i = 0; i < staffMembers.length; i++) {
+			staffMembers[i].displayStaffDetails();
+			System.out.println();
+		}
+		
+		//Demonstrate runtime polymorphism and calculate monthly compensation
 		for (MedicalStaff member : staffMembers) {
 			System.out.printf("%s (%s): $%.2f",member.getName(), member.getRoleDescription(), member.calculateMonthlyCompensation());
 			System.out.println();
