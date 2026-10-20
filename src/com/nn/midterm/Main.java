@@ -52,6 +52,7 @@ public class Main {
 		}
 		
 		//Demonstrate runtime polymorphism and calculate monthly compensation
+		System.out.println("\nSTAFF COMPENSATIONS (Runtime Polymorphism)");
 		for (MedicalStaff member : staffMembers) {
 			System.out.printf("%s (%s): $%.2f",member.getName(), member.getRoleDescription(), member.calculateMonthlyCompensation());
 			System.out.println();
