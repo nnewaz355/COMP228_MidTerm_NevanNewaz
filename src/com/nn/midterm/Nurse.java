@@ -32,6 +32,6 @@ public class Nurse extends MedicalStaff implements Reportable{ // hybrid inherit
 	public void generateReport() {
 		System.out.println("[Staff] " + this.getStaffId() + " (" + this.getRoleDescription() + ")");
 		System.out.println("Department: " + this.getDepartment());
-		System.out.printf("Compensation: $%2f%n", this.calculateMonthlyCompensation());
+		System.out.printf("Compensation: $%.2f%n", this.calculateMonthlyCompensation());
 	}
 }
