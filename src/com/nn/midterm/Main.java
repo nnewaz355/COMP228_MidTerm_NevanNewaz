@@ -78,6 +78,10 @@ public class Main {
 		System.out.println("Total People: " + Person.personCount);
 		System.out.println("Total Patients: " + Patient.patientCount);
 		System.out.println("Total Medical Staff: " + MedicalStaff.staffCount);
+		
+		System.out.println("========================================");
+		System.out.println("            END OF REPORT");
+		System.out.println("========================================");
 	}
 
 }
