@@ -28,4 +28,10 @@ public class Nurse extends MedicalStaff { // hybrid inheritance (multilevel and 
 	public String getRoleDescription() {
 		return "Nurse (" + shiftType + " shift)";
 	}
+	
+	public void generateReport() {
+		System.out.println("[Staff] " + this.getStaffId() + " (" + this.getRoleDescription() + ")");
+		System.out.println("Department: " + this.getDepartment());
+		System.out.printf("Compensation: $%2f%n" + this.calculateMonthlyCompensation());
+	}
 }
