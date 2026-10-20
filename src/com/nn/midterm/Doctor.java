@@ -54,7 +54,7 @@ public class Doctor extends MedicalStaff implements Reportable { //multilevel in
 	public void generateReport() {
 		System.out.println("[Staff] " + this.getStaffId() + " (" + this.getRoleDescription() + ")");
 		System.out.println("Patients Seen: " + this.patientsSeen);
-		System.out.printf("Fee: $%2f%n" + this.calculateConsultationFee());
+		System.out.printf("Fee: $%.2f%n" + this.calculateConsultationFee());
 		System.out.printf("Compensation: $%2f%n" + this.calculateMonthlyCompensation());
 	}
 }

@@ -80,6 +80,6 @@ methods, validation, and patient details.
 
 	@Override
 	public void generateReport() {
-		System.out.printf("[Patient] %s (%s)%nAge: %d year(s)%nDepartment: %s%nConsultation Fee: $%.2f", this.patientNumber, this.getName(), this.age, this.medicalDepartment, this.consultationFee);
+		System.out.printf("[Patient] %s (%s)%nAge: %d year(s)%nDepartment: %s%n", this.patientNumber, this.getName(), this.age, this.medicalDepartment);
 	}
 }
