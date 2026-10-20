@@ -6,7 +6,7 @@ public class SpecialistDoctor extends Doctor { //multilevel inheritance
 	
 	
 	
-	public SpecialistDoctor(String name, String phoneNumber, String staffId, String department,
+	public SpecialistDoctor(String staffId, String name, String phoneNumber, String department,
 			double monthlySalary, double consultationFee, int patientsSeen, String specialization,
 			double specialistSurcharge) {
 		super(staffId, name, phoneNumber, department, monthlySalary, consultationFee, patientsSeen);
